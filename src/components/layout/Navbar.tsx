@@ -12,14 +12,12 @@ import {
 import { cn } from "@/lib/utils";
 import { NavLink } from "react-router";
 
-// Navigation links array to be used in both desktop and mobile menus
 const navigationLinks = [
   { href: "/", label: "Home" },
   { href: "/rides", label: "Rides" },
   { href: "/drivers", label: "Drivers" },
   { href: "/vehicles", label: "Vehicles" },
   { href: "/reports", label: "Reports" },
-  { href: "/dashboard", label: "Dashboard" },
 ];
 
 export default function Navbar() {
@@ -85,7 +83,7 @@ export default function Navbar() {
           {/* Main nav */}
           <div className="flex items-center gap-6">
             <a href="#" className="text-primary hover:text-primary/90">
-              <h1 className='text-2xl font-bold'>Ride-Management</h1>
+              <h1 className='text-2xl font-bold'>Rideo</h1>
             </a>
             {/* Navigation menu */}
             <NavigationMenu className="max-md:hidden">
@@ -112,10 +110,10 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" size="sm" className="text-sm">
-            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
           </Button>
           <Button asChild size="sm" className="text-sm">
-            <a href="#">Get Started</a>
+            <a href="#">Dashboard</a>
           </Button>
         </div>
       </div>
