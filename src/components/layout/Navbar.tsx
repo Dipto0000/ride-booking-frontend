@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
@@ -83,7 +83,7 @@ export default function Navbar() {
           {/* Main nav */}
           <div className="flex items-center gap-6">
             <a href="#" className="text-primary hover:text-primary/90">
-              <h1 className='text-2xl font-bold'>Rideo</h1>
+              <h1 className='text-2xl font-bold'>Rideio</h1>
             </a>
             {/* Navigation menu */}
             <NavigationMenu className="max-md:hidden">
@@ -110,7 +110,7 @@ export default function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-2">
           <Button asChild variant="ghost" size="sm" className="text-sm">
-            <a href="#">Sign Up</a>
+            <Link to = "/register">Register</Link>
           </Button>
           <Button asChild size="sm" className="text-sm">
             <a href="#">Dashboard</a>

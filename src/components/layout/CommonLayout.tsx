@@ -14,9 +14,8 @@ export default function CommonLayout({ children }: IProps) {
         {children}
       </main>
 
-      <footer>
+      
         <Footer />
-      </footer>
 
     </div>
   );
